@@ -20,6 +20,17 @@
                 Console.WriteLine("Lado X: " + LadoX);
                 Console.WriteLine("Lado Y: " + LadoY);
                 Console.WriteLine("Lado Z: " + LadoZ);
+                Console.WriteLine("______________________________________________________");
+
+                bool medidasTriangulosValidas =
+                    LadoX + LadoY > LadoZ &&
+                    LadoX + LadoZ > LadoY &&
+                    LadoY + LadoZ > LadoX;
+
+                if (medidasTriangulosValidas == true)
+                    Console.WriteLine("Os valores informados formam um triângulo.");
+                else
+                    Console.WriteLine("Os valores informados não formam um triângulo.");
 
                 Console.WriteLine("______________________________________________________");
                 Console.Write("Deseja continuar ? (S / N) : ");
